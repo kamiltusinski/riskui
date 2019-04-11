@@ -1,17 +1,15 @@
 import * as React from 'react';
 
-import AppNav from '../components/AppNav';
+import TopBar from '../components/TopBar';
 import { Container } from 'semantic-ui-react';
 
 import DevTools from 'mobx-react-devtools';
-
-import './Shell.css';
 
 class Shell extends React.Component<any> {
   render() {
     return (
       <>
-        <AppNav />
+        <TopBar />
         <Container fluid className="view-container">
           {this.props.children}
         </Container>

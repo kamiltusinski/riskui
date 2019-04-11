@@ -25,7 +25,8 @@ code {
   height: 100%;
 }
 
-.full-height-container .take-available-space {
-  flex: 1;
-  min-height: 0;
+.view-container {
+  height: calc(100% - 64px);
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  padding-top: calc(64px + 0.5rem);
 }

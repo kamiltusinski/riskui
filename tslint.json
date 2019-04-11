@@ -11,7 +11,7 @@
         }
       ],
       "trailing-comma": false,
-      "prefer-template": [true, "allow-single-concat"]
+      "prefer-template": false
     },
     "linterOptions": {
       "exclude": [

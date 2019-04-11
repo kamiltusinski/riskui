@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 
+import { ToastContainer } from 'react-toastify';
+
 import { Provider } from 'mobx-react';
 
 import Shell from './shell/Shell';
 import RiskGrid from './components/RiskGrid';
-import RiskGridStore from './components/RiskGridStore';
+import Store from './components/Store';
 
 const stores = {
-  riskGridStore: RiskGridStore
+  store: Store
 };
 
 class App extends Component {
@@ -19,6 +21,13 @@ class App extends Component {
             <RiskGrid />
           </Shell>
         </Provider>
+
+        <ToastContainer autoClose={5000}
+          hideProgressBar
+          newestOnTop={false}
+          closeOnClick
+          pauseOnHover
+        />
       </>
     );
   }
