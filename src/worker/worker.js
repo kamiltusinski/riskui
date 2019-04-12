@@ -61,7 +61,7 @@ export default () => {
     function getInitialData() {
         //var bigTableApi = new BigTableApi();
         //globalRowData = bigTableApi.getData();
-        let url = 'https://facade.repbus.polaris.dev/risk/get_family';
+        let url = 'https://facade.repbus.polaris.kaolin.dev/risk/get_family';
         let init = {
             method: 'GET',
             mode: 'cors',
@@ -88,7 +88,7 @@ export default () => {
         
         //var bigTableApi = new BigTableApi();
         //globalRowData = bigTableApi.getData();
-        let url = 'https://facade.repbus.polaris.dev/risk/get_family?date=' + Math.floor(time/1000);
+        let url = 'https://facade.repbus.polaris.kaolin.dev/risk/get_family?date=' + Math.floor(time/1000);
         let init = {
             method: 'GET',
             mode: 'cors',
@@ -107,7 +107,7 @@ export default () => {
     function getData() {
         //var bigTableApi = new BigTableApi();
         //globalRowData = bigTableApi.getData();
-        let url = 'https://facade.repbus.polaris.dev/risk/get_family';
+        let url = 'https://facade.repbus.polaris.kaolin.dev/risk/get_family';
         let init = {
             method: 'GET',
             mode: 'cors',
