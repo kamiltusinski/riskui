@@ -2,6 +2,7 @@ import worker from '../worker/worker';
 import WebWorker from '../worker/workerSetup';
 
 import { toast } from 'react-toastify';
+import moment from 'moment';
 
 export class Store {
   private testStartTime: any;
@@ -85,6 +86,12 @@ export class Store {
       {
         headerName: 'Hierarchy', children: [
           { headerName: 'Market', field: 'marketEnvId', type: 'dimension', /*rowGroupIndex: 0,*/ hide: false },
+          {
+            headerName: 'Time', field: 'time',
+            valueFormatter: (params: any) => moment(params.value * 1000).format('DD/MM/YY HH:mm:ss'),
+            width: 220,
+            type: 'dimension', /*rowGroupIndex: 0,*/ hide: false
+          },
           { headerName: 'Product', field: 'product', type: 'dimension', /*rowGroupIndex: 0,*/ hide: false },
           { headerName: 'Bank', field: 'Book1', type: 'dimension', /*rowGroupIndex: 1,*/ hide: false },
           { headerName: 'Desk', field: 'Book2', type: 'dimension', /*rowGroupIndex: 2,*/ hide: false },
